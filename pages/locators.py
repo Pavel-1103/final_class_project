@@ -25,3 +25,4 @@ class BasePageLocators:
     INPUT_SUBSCRIBE = (By.XPATH,"//input[@class='newsletter_input']")
     LOGO_FOOT = (By.XPATH, "//img[@src='images/logo-footer.png']")
 
+
