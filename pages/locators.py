@@ -29,3 +29,24 @@ class BasePageLocators:
     LOGO_FOOT = (By.XPATH, "//img[@src='images/logo-footer.png']")
 
 
+
+class MainPageLocators:
+    SCREEN_SLIDER = (By.XPATH, "//div[@class='screen_slider']")
+    CAT_ZARYADKI = (By.XPATH, "//a[@href='category/zaryadki']")
+    SUB_CAT_POWER_BANK = (By.XPATH, "//ul[@class='cat_menu']/li[5]/ul/li[6]")
+
+    INFO_BLOCK_VOZVRAT_SREDSTV = (By.XPATH, "//div[@class='characteristics']//div[@class='row']/div[1]/div")
+    INFO_BLOCK_DOSTAVKA = (By.XPATH, "//div[@class='characteristics']//div[@class='row']/div[2]/div")
+    INFO_BLOCK_OTSROCHKA = (By.XPATH, "//div[@class='characteristics']//div[@class='row']/div[3]/div")
+    INFO_BLOCK_SUPPORT = (By.XPATH, "//div[@class='characteristics']//div[@class='row']/div[4]/div")
+    BUTTON_SHOW_NEW_PRODUCTS = (By.XPATH, "//div[@class='new_arrivals_title clearfix']//a[@href='main/showNew']")
+    BUTTON_PREV_NEW_PRODUCTS = (By.XPATH, "//div[@class='new_arrivals']//div[@class='arrivals_nav arrivals_prev']")
+    BUTTON_NEXT_NEW_PRODUCTS = (By.XPATH, "//div[@class='new_arrivals']//div[@class='arrivals_nav arrivals_next']")
+    SECTION_NEW_PRODUCTS = (By.XPATH, "//div[@class='nes_arrivals']//div[@class='slick-list draggable']")
+    NEW_PRODUCT_8 = (By.XPATH, "//div[@class='new_arrivals']//div[@class='slick-list draggable']/div/div[3]div[2]")
+    BUTTON_SHOW_HITS = (By.XPATH, "//div[@class='best_sellers']//a[@href='main/showHit']")
+    BUTTON_PREV_HITS = (By.XPATH, "//div[@class='best_sellers']//div[@class='best_prev best_nav']/i")
+    BUTTON_NEXT_HITS = (By.XPATH, "//div[@class='best_sellers']//div[@class='best_next best_nav']/i")
+    SECTION_HITS = (By.XPATH, "//div[@class='best_sellers']//div[@class='bestsellers_panel panel_active']")
+    BUTTON_PREV_TREND = (By.XPATH, "//div[@class='trends']//div[@class='trends_prev trendsna_nav slick-arrow']/i")
+    BUTTON_NEXT_TREND = (By.XPATH, "//div[@class='trends']//div[@class='trends_next trends_nav slick-arrow']/i")
