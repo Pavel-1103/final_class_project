@@ -14,7 +14,7 @@ class BasePageLocators:
     CURRENCY_EUR = (By.XPATH, "//select[@id='currency']/option[text()='EUR']")
     LOGO_DESK = (By.XPATH, "//div[@class='logo logo-desk']/a/ing")
     LOGO_MOB = (By.XPATH, "//div[@class='logo logo-mob']/a/ing")
-    SEARCH = (By.XPATH, "//*[@id='typehead']")
+    SEARCH = (By.XPATH, "//*[@id='typeahead']")
     SUBMIT = (By.XPATH, "//div[@class='header_search']//button")
     WISH = (By.XPATH, "//div[contains(@class, 'wishlist')]/div[@class='wishlist_icon']/a/img")
     CART = (By.XPATH, "//div[@class='cart']//div[@class='cart_icon']/a/img")
@@ -27,6 +27,8 @@ class BasePageLocators:
     SUBSCRUBE = (By.XPATH, "//button[@class='newsletter_button']")
     INPUT_SUBSCRIBE = (By.XPATH,"//input[@class='newsletter_input']")
     LOGO_FOOT = (By.XPATH, "//img[@src='images/logo-footer.png']")
+    ALERT_SUCCESS = (By.XPATH, "//div[@id = 'alert-success']")
+    ALERT_ERROR = (By.XPATH, "//div[@id = 'alert-error']")
 
 
 
@@ -50,3 +52,23 @@ class MainPageLocators:
     SECTION_HITS = (By.XPATH, "//div[@class='best_sellers']//div[@class='bestsellers_panel panel_active']")
     BUTTON_PREV_TREND = (By.XPATH, "//div[@class='trends']//div[@class='trends_prev trendsna_nav slick-arrow']/i")
     BUTTON_NEXT_TREND = (By.XPATH, "//div[@class='trends']//div[@class='trends_next trends_nav slick-arrow']/i")
+
+
+class SignupLoginPageLocators:
+    pass
+
+
+class OrderPageLocators:
+    pass
+
+
+class CabinetPageLocators:
+    pass
+
+
+class CategoryPageLocators:
+    pass
+
+
+class SearchPageLocators:
+    pass

@@ -7,6 +7,7 @@ from selenium.common.exceptions import ElementClickInterceptedException
 from selenium.webdriver.support import expected_conditions as EC
 from settings import sets
 import time
+#from pages.locators import BasePageLocators
 
 
 class BasePage:
@@ -36,7 +37,7 @@ class BasePage:
     
     def is_element_appears_after_while(self, how, what, timeout):
         try:
-            WebDriwerWait(self.browser, timeout).until(EC.visibility_of_element_located((how, what)))
+            WebDriverWait(self.browser, timeout).until(EC.visibility_of_element_located((how, what)))
         except TimeoutException:
             return False
         return True
