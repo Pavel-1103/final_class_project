@@ -1,3 +1,4 @@
+
 from ..pages import base_page, locators
 import inspect
 
@@ -226,5 +227,4 @@ class MainPage(base_page.BasePage):
         assert self.is_element_appears_after_while(*locators.BasePageLocators.ALERT_SUCCESS, timeout=5), \
             "The element is not present"
         print(f"{inspect.currentframe().f_code.co_name} - Ok")
-
 
